@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class GroceryDiscount {
+public class GroceryDiscountV2 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		double coupon = 0;
