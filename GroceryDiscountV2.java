@@ -8,7 +8,7 @@ public class GroceryDiscount {
 		
 	    while(true){
 	       
-	        System.out.printf("%n Please enter the cost of your groceries or '0' to quit: ");
+	        System.out.printf("%n Please enter the cost of your groceries ($1-$1000) or '0' to quit: ");
 		    double price = scan.nextDouble();
 	        	
 	        	if(price>0&&price<10)
@@ -39,7 +39,7 @@ public class GroceryDiscount {
 		           	System.out.printf("You win a discount coupon of $ %.2f",coupon);
                     		System.out.print(" (14% of your purchase)");
 		        }
-	        	else
+		    	else
 		        {
 	            	System.exit(1);
 		        }
