@@ -9,13 +9,14 @@ public class GPA_Calculation {
 	double gradePoints = 0;
 	double creditHours = 0;
 	double GPA = 0;
+	System.out.println("Enter course information seperated by commas (title, credit hours, letter grade) or type Q to quit");
 	System.out.print("Course");
 	System.out.print("    Credit Hours");
 	System.out.print("    Grade");
 	System.out.print("    Grade Points\n");
 	for(int i = 0; i < 10; i++) //put output in columns
 	{
-		System.out.println("Enter course information seperated by commas (title, credit hours, letter grade) or type Q to quit:");
+		System.out.print("Input:");
 		courses = scan.nextLine();
 		
 		if(courses.equals("Q") || courses.equals("q"))
@@ -94,3 +95,4 @@ public class GPA_Calculation {
 	}
 
 }
+
