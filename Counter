@@ -1,0 +1,61 @@
+public class Counter {
+	
+	private int value;
+	
+	public int getValue() {
+		return value;
+	}
+	public void click() {
+		value = value + 1;
+	}
+	public void unclick() {	
+		value = value - 1;
+	}
+	public void reset(){
+		value = 0;
+	}
+	public void clickMany(int value){
+		value = value + 1;
+	}
+	public void unclickMany(int value){
+		value = value + 1;
+	}
+	
+	public static void main(String[] args) {
+	Counter venue = new Counter();
+	Counter anotherVenue = new Counter();
+	int rValue=venue.getValue();
+	System.out.println(rValue);
+
+	for(int i=0;i<10;i++)
+	{
+		venue.click();
+	}
+	rValue=venue.getValue();
+	System.out.println(rValue);
+	
+	for(int i=0;i<5;i++)
+	{
+		venue.unclick();
+	}
+	rValue=venue.getValue();
+	System.out.println("venue = " + rValue);
+	venue.reset();
+	for(int i=0;i<3;i++)
+	{
+		venue.click();
+	}
+	for(int i=0;i<4;i++)
+	{
+		venue.unclick();
+	}
+	System.out.println(rValue);
+	anotherVenue.clickMany(10);
+	anotherVenue.unclickMany(5);
+	anotherVenue.reset();
+	anotherVenue.clickMany(3);
+	anotherVenue.unclickMany(4);
+	System.out.println(anotherVenue);
+	
+	}
+}
